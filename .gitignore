@@ -1,0 +1,6 @@
+.key
+pkg
+src
+bin/ngrokd
+bin/0x7be
+bin/go-bindata
