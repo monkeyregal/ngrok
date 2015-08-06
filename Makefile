@@ -14,7 +14,7 @@ fmt:
 	go fmt ngrok/...
 
 client: deps
-	go install -tags '$(BUILDTAGS)' ngrok/main/ngrok
+	go install -tags '$(BUILDTAGS)' ngrok/main/0x7be
 
 assets: client-assets server-assets
 
