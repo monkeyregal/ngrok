@@ -63,6 +63,10 @@ func tunnelListener(addr string, tlsConfig *tls.Config, secret string) {
 	}
 
 	log.Info("Listening for control and proxy connections on %s", listener.Addr.String())
+	if secret != "" {
+		log.Info("Clients should use '%s' as secret", secret)
+	}
+
 	for c := range listener.Conns {
 		go func(tunnelConn conn.Conn) {
 			// don't crash on panics
