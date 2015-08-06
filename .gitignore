@@ -1,4 +1,5 @@
 *.swp
+.key
 bin/
 pkg/
 src/code.google.com
